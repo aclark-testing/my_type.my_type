@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layers>
+    <!-- -*- extra stuff goes here -*- -->
+
+    <layer name="My_typeMy_type"
+        interface="my_type.my_type.interfaces.my_typemy_typelayer.IMy_typeMy_typeLayer"
+    />
+</layers>
+

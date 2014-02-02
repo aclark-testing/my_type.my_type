@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:meta="http://namespaces.zope.org/meta">
+  <!-- -*- extra stuff goes here -*- -->
+
+  <meta:directive
+      name="mydirective"
+      namespace="http://namespaces.zope.org/mynamespace"
+      schema=".metadirectives.IMydirectiveDirective"
+      handler=".metaconfigure.MydirectiveDirective"
+      />
+
+</configure>

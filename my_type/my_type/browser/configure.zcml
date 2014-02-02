@@ -1,0 +1,45 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="my_type.my_type">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+      for="*"
+      name="example_view"
+      class=".exampleview.ExampleView"
+      template="exampleview.pt"
+      allowed_interface=".exampleview.IExampleView"
+      permission="zope.Public"
+      />
+
+    
+    <browser:page
+        for="*"
+        name="exampleform"
+        class=".exampleform.ExampleForm"
+        permission="zope.Public" />
+
+
+    <!-- If you are using plone version 3.0, you will need to include the 
+         plone.browserlayer package in your buildout and uncomment the following
+         line in order to use IMy_typeMy_typeLayer as a layer attribute -->
+    <!-- 
+    <include package="plone.browserlayer" />
+    -->
+    <!-- Example of browser component with IMy_typeMy_typeLayer layer attribute -->
+    <!-- 
+    <browser:page
+        name="my-view"
+        for="*"
+        permission="zope.Public"
+        template="my-view.pt"
+        layer="..interfaces.IMy_typeMy_typeLayer"
+        />
+    -->
+
+
+</configure>
