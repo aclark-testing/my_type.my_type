@@ -17,11 +17,14 @@
       />
 
     
+<!--
     <browser:page
         for="*"
         name="exampleform"
         class=".exampleform.ExampleForm"
         permission="zope.Public" />
+
+-->
 
 
     <!-- If you are using plone version 3.0, you will need to include the 

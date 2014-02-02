@@ -23,7 +23,7 @@
   
   <!-- -*- extra stuff goes here -*- -->
 
-  <include package=".meta" />
+<!--  <include package=".meta" /> -->
   
 
   <include package=".browser" />
