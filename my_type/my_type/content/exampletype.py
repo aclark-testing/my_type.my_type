@@ -17,6 +17,16 @@ ExampleTypeSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
 
     # -*- Your Archetypes field definitions here ... -*-
 
+    atapi.LinesField(
+        'newfield',
+        storage=atapi.AnnotationStorage(),
+        widget=atapi.LinesWidget(
+            label=_(u"New Field"),
+            description=_(u"Field description"),
+        ),
+    ),
+
+
     atapi.StringField(
         'newfield',
         storage=atapi.AnnotationStorage(),
@@ -49,6 +59,8 @@ class ExampleType(base.ATCTContent):
     description = atapi.ATFieldProperty('description')
 
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
+    newlinesfield = atapi.ATFieldProperty('newlinesfield')
+
     newfield = atapi.ATFieldProperty('newfield')
 
 
