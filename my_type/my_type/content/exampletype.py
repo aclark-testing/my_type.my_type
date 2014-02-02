@@ -59,7 +59,7 @@ class ExampleType(base.ATCTContent):
     description = atapi.ATFieldProperty('description')
 
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
-    newlinesfield = atapi.ATFieldProperty('newlinesfield')
+    #newlinesfield = atapi.ATFieldProperty('newlinesfield')
 
     newfield = atapi.ATFieldProperty('newfield')
 
